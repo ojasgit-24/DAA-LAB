@@ -1,0 +1,15 @@
+void read1(int arr[],int n){
+	printf("Enter %d elements : ",n);
+	for(int i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+}
+int linearSearch(int a[],int i,int m,int key){
+	for(i=0;i<m;i++){
+		if(a[i]==key){
+			return i;
+			break;
+		}
+	}
+	return -1;
+}
